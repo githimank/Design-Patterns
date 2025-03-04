@@ -10,6 +10,7 @@ class ButtonDecorator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Decorator Pattern in Flutter")),
       body: Column(
         children: [
           Center(
@@ -17,7 +18,7 @@ class ButtonDecorator extends StatelessWidget {
               BorderButtonDecorator(
                 BasicButton(
                   onPressed: () {},
-                  text: '',
+                  text: 'Hello',
                 ),
               ),
             ).build(),
